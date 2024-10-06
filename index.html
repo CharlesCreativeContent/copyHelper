@@ -29,6 +29,10 @@
 
     Finally, do not use lengthy introductions, do not include a paragraph on ethical considerations, do not provide generic advice, and do not follow a predictable structure with set sections, for example a generic introduction, scene-setting, actionable steps, further considerations, and a summary. Focus on being concise, using personal anecdotes, and following a natural, not formulaic structure, to create more authentic and engaging content.
 
+    Here's the 3 steps :
+1. Search youtube videos for ‘IBM Think 2025"? 
+2. Search this link and start the blog with it: https://www.ibm.com/events/think
+3. Write SEO optimized blog post in the style of "The Worlds Greatest Blogger" that is easily understandable, and readable, using information above. and includes 5 interesting links embedded into the flow of the blog post. Be concise and don’t add fluff.
 
     Let's take this step by step to make sure the answer is correct!
 
@@ -36,13 +40,15 @@
      
     let step1 = ` 1. Search youtube videos for "${topic}".`
     
-    let step2 = ` 2. Write SEO optimized blog post in the style of "The Worlds Greatest Blogger" that is easily understandable, and readable, using information above. and includes 3 interesting links embedded into the flow of the blog post`
+    let step2 = ` 2. Search this link and start the blog with it: ${link}`
+        
+    let step3 = ` 3. Write SEO optimized blog post in the style of "The Worlds Greatest Blogger" that is easily understandable, and readable, using information above. and includes 5 interesting links embedded into the flow of the blog post. Be concise and don’t add fluff.`
     
-    let step3 = ` Start the blog off with this link: ${link}`
 
     let fullPrompt = prompt+step1+step2+step3
         transferClip(fullPrompt)
         chat.innerHTML = fullPrompt
+        window.location = "https://chatgpt.com/?model=gpt-4o-canmore"
     }
 
 function transferClip(inputText){
